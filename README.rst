@@ -11,6 +11,8 @@ This is a fork of https://github.com/audreyr/cookiecutter-pypackage
 See https://github.com/audreyr/cookiecutter for instructions for using
 Cookiecutter.
 
+The new project will be configured with the following by default:
+
 * Free software: MIT license
 * Vanilla testing setup with `unittest` and `python setup.py test`
 * Travis-CI_: Ready for Travis Continuous Integration testing
