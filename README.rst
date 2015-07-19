@@ -1,10 +1,17 @@
-======================
-cookiecutter-pypackage
-======================
+===========================
+cookiecutter-python-package
+===========================
 
-Cookiecutter template for a Python package. See https://github.com/audreyr/cookiecutter.
+This is a Cookiecutter template for a Python package that tries to follow
+the current best practices from the `Python Packaging User Guide`_ while
+including configuration for some helpful extra tools.
 
-* Free software: BSD license
+This is a fork of https://github.com/audreyr/cookiecutter-pypackage
+
+See https://github.com/audreyr/cookiecutter for instructions for using
+Cookiecutter.
+
+* Free software: MIT license
 * Vanilla testing setup with `unittest` and `python setup.py test`
 * Travis-CI_: Ready for Travis Continuous Integration testing
 * Tox_ testing: Setup to easily test for Python 2.6, 2.7, 3.3, 3.4
@@ -15,7 +22,7 @@ Usage
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git
+    cookiecutter https://github.com/tylerdave/cookiecutter-python-package.git
 
 Then:
 
@@ -70,4 +77,5 @@ make my own packaging experience better.
 .. _`tony/cookiecutter-pypackage`: https://github.com/tony/cookiecutter-pypackage
 .. _github comparison view: https://github.com/tony/cookiecutter-pypackage/compare/audreyr:master...master
 .. _`network`: https://github.com/audreyr/cookiecutter-pypackage/network
+.. _`Python Packaging User Guide`: https://packaging.python.org/en/latest/index.html
 .. _`family tree`: https://github.com/audreyr/cookiecutter-pypackage/network/members
