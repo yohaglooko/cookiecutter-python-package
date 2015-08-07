@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+from ._version import get_versions
+
 __author__ = '{{ cookiecutter.full_name }}'
 __email__ = '{{ cookiecutter.email }}'
-__version__ = '{{ cookiecutter.version }}'
+__version__ = get_versions()['version']
+del get_versions

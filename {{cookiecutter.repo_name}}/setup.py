@@ -7,6 +7,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
+import versioneer
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -24,7 +25,8 @@ test_requirements = [
 
 setup(
     name='{{ cookiecutter.repo_name }}',
-    version='{{ cookiecutter.version }}',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     description="{{ cookiecutter.project_short_description }}",
     long_description=readme + '\n\n' + history,
     author="{{ cookiecutter.full_name }}",
