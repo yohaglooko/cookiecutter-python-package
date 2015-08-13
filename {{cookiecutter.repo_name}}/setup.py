@@ -17,6 +17,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     # TODO: put package requirements here
+    'click',
 ]
 
 test_requirements = [
@@ -37,6 +38,11 @@ setup(
     ],
     package_dir={'{{ cookiecutter.repo_name }}':
                  '{{ cookiecutter.repo_name }}'},
+    entry_points={
+        'console_scripts':[
+            '{{ cookiecutter.repo_name }}=cli.main',
+            ],
+        }
     include_package_data=True,
     install_requires=requirements,
     license="MIT",
