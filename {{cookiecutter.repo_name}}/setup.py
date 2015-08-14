@@ -40,7 +40,7 @@ setup(
                  '{{ cookiecutter.repo_name }}'},
     entry_points={
         'console_scripts':[
-            '{{ cookiecutter.repo_name }}=cli.main',
+            '{{ cookiecutter.repo_name }}=cli.cli',
             ],
         }
     include_package_data=True,
