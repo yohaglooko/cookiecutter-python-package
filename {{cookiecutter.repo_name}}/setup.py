@@ -42,7 +42,7 @@ setup(
         'console_scripts':[
             '{{ cookiecutter.repo_name }}=cli.cli',
             ],
-        }
+        },
     include_package_data=True,
     install_requires=requirements,
     license="MIT",
