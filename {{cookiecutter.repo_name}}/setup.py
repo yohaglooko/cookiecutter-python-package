@@ -1,18 +1,19 @@
+"""A setuptools based setup module for {{ cookiecutter.repo_name }}"""
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from codecs import open
+from os import path
+from setuptools import setup, find_packages
 
 import versioneer
 
-with open('README.rst') as readme_file:
+here = path.abspath(path.dirname(__file__))
+
+with open(path.join(here, 'README.rst'), encoding='utf-8') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
+with open(path.join(here, 'HISTORY.rst'), encoding='utf-8') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
 requirements = [
@@ -33,11 +34,7 @@ setup(
     author="{{ cookiecutter.full_name }}",
     author_email='{{ cookiecutter.email }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
-    packages=[
-        '{{ cookiecutter.repo_name }}',
-    ],
-    package_dir={'{{ cookiecutter.repo_name }}':
-                 '{{ cookiecutter.repo_name }}'},
+    packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     entry_points={
         'console_scripts':[
             '{{ cookiecutter.repo_name }}={{ cookiecutter.repo_name }}.cli:cli',
@@ -46,7 +43,6 @@ setup(
     include_package_data=True,
     install_requires=requirements,
     license="MIT",
-    zip_safe=False,
     keywords='{{ cookiecutter.repo_name }}',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
