@@ -12,7 +12,7 @@
 {{ cookiecutter.project_short_description}}
 
 * Free software: MIT license
-* Documentation: https://{{ cookiecutter.repo_name }}.readthedocs.org.
+* Documentation: (COMING SOON!) https://{{ cookiecutter.repo_name }}.readthedocs.org.
 
 Features
 --------

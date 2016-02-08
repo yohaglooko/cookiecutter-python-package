@@ -2,8 +2,8 @@
 Credits
 =======
 
-Development Lead
-----------------
+Maintainer
+----------
 
 * {{ cookiecutter.full_name }} <{{ cookiecutter.email }}>
 
