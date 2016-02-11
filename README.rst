@@ -16,7 +16,7 @@ The new project will be configured with the following by default:
 * Free software: MIT license
 * Vanilla testing setup with `unittest` and `python setup.py test`
 * Travis-CI_: Ready for Travis Continuous Integration testing
-* Tox_ testing: Setup to easily test for Python 2.6, 2.7, 3.3, 3.4
+* Tox_ testing: Setup to easily test for Python 2.7, 3.3, 3.4, 3.5, pypy
 * Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
 * Click: It will install click as a dependency and include a CLI entry point by default. It's easier (for me at least) to delete this when not needed than it is to maintain a seperate branch.
 
