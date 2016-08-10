@@ -19,7 +19,7 @@ class Test{{ cookiecutter.repo_name|capitalize }}(unittest.TestCase):
         pass
 
     def test_something(self):
-        assert({{ cookiecutter.repo_name}}.__version__))
+        assert({{ cookiecutter.repo_name}}.__version__)
 
     def tearDown(self):
         pass
