@@ -1,4 +1,4 @@
-"""A setuptools based setup module for {{ cookiecutter.package_dir_name }}"""
+"""A setuptools based setup module for {{ cookiecutter.package_dist_name }}"""
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -26,24 +26,23 @@ test_requirements = [
 ]
 
 setup(
-    name='{{ cookiecutter.package_dir_name }}',
+    name='{{ cookiecutter.package_dist_name }}',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description="{{ cookiecutter.project_short_description }}",
     long_description=readme + '\n\n' + history,
     author="{{ cookiecutter.full_name }}",
     author_email='{{ cookiecutter.email }}',
-    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_dir_name }}',
+    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     entry_points={
         'console_scripts':[
-            '{{ cookiecutter.package_dir_name }}={{ cookiecutter.package_dir_name }}.cli:cli',
+            '{{ cookiecutter.repo_name }}={{ cookiecutter.package_dir_name }}.cli:cli',
             ],
         },
     include_package_data=True,
     install_requires=requirements,
     license="MIT",
-    keywords='{{ cookiecutter.package_dir_name }}',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
@@ -57,5 +56,5 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     test_suite='tests',
-    tests_require=test_requirements
+    tests_require=test_requirements,
 )
