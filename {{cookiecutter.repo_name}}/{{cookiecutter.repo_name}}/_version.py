@@ -37,8 +37,8 @@ def get_config():
     cfg.VCS = "git"
     cfg.style = "pep440"
     cfg.tag_prefix = ""
-    cfg.parentdir_prefix = "{{ cookiecutter.repo_name }}-"
-    cfg.versionfile_source = "{{ cookiecutter.repo_name }}/_version.py"
+    cfg.parentdir_prefix = "{{ cookiecutter.package_dir_name }}-"
+    cfg.versionfile_source = "{{ cookiecutter.package_dir_name }}/_version.py"
     cfg.verbose = False
     return cfg
 

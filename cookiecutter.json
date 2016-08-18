@@ -3,7 +3,7 @@
 "email": "tylerdave@tylerdave.com",
 "github_username": "tylerdave",
 "project_name": "Python Boilerplate",
-"repo_name": "boilerplate",
+"package_dir_name": "boilerplate",
 "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
 "year": "2016"
 }

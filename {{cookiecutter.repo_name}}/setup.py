@@ -1,4 +1,4 @@
-"""A setuptools based setup module for {{ cookiecutter.repo_name }}"""
+"""A setuptools based setup module for {{ cookiecutter.package_dir_name }}"""
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -26,24 +26,24 @@ test_requirements = [
 ]
 
 setup(
-    name='{{ cookiecutter.repo_name }}',
+    name='{{ cookiecutter.package_dir_name }}',
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     description="{{ cookiecutter.project_short_description }}",
     long_description=readme + '\n\n' + history,
     author="{{ cookiecutter.full_name }}",
     author_email='{{ cookiecutter.email }}',
-    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
+    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.package_dir_name }}',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     entry_points={
         'console_scripts':[
-            '{{ cookiecutter.repo_name }}={{ cookiecutter.repo_name }}.cli:cli',
+            '{{ cookiecutter.package_dir_name }}={{ cookiecutter.package_dir_name }}.cli:cli',
             ],
         },
     include_package_data=True,
     install_requires=requirements,
     license="MIT",
-    keywords='{{ cookiecutter.repo_name }}',
+    keywords='{{ cookiecutter.package_dir_name }}',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

@@ -11,4 +11,4 @@ recursive-exclude * *.py[co]
 recursive-include docs *.rst conf.py Makefile make.bat
 
 include versioneer.py
-include {{cookiecutter.repo_name}}/_version.py
+include {{cookiecutter.package_dir_name}}/_version.py

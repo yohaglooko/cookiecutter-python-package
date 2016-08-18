@@ -2,24 +2,24 @@
 # -*- coding: utf-8 -*-
 
 """
-test_{{ cookiecutter.repo_name }}
+test_{{ cookiecutter.package_dir_name }}
 ----------------------------------
 
-Tests for `{{ cookiecutter.repo_name }}` module.
+Tests for `{{ cookiecutter.package_dir_name }}` module.
 """
 
 import unittest
 
-import {{ cookiecutter.repo_name }}
+import {{ cookiecutter.package_dir_name }}
 
 
-class Test{{ cookiecutter.repo_name|capitalize }}(unittest.TestCase):
+class Test{{ cookiecutter.package_dir_name|capitalize }}(unittest.TestCase):
 
     def setUp(self):
         pass
 
     def test_something(self):
-        assert({{ cookiecutter.repo_name}}.__version__)
+        assert({{ cookiecutter.package_dir_name}}.__version__)
 
     def tearDown(self):
         pass
