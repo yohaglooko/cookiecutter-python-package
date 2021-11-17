@@ -25,7 +25,7 @@ Usage
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/tylerdave/cookiecutter-python-package.git
+    cookiecutter https://github.com/yohaglooko/cookiecutter-python-package.git
 
 Then:
 
